@@ -1099,7 +1099,7 @@ static void checkUsbDeviceAutoSuspend(const std::string& devicePath) {
 
 static bool checkUsbInterfaceAutoSuspend(const std::string& devicePath,
         const std::string &intf) {
-  std::string bInterfaceClass;
+  std::string bInterfaceClass = "";
   int interfaceClass, ret = -1, retry = 3;
 
   do {
